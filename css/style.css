@@ -1,0 +1,1149 @@
+/**  RESET  +  GENERALES **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/**---ESTILOS GENERALES & MIXIN---**/
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 10px; }
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 5px; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  color: #F88C7E; }
+
+a:visited a:link {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px; }
+
+/* ---GRILLA DESKTOP FIRST ----*/
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "header" "main " "footer "; }
+
+/**----------------- ELEMENTOS  INDEPEDIENTES -----------------**/
+/**----------------- PLANES ( modulos de 3 ) -----------------**/
+.planes {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px; }
+  .planes .plan {
+    width: 30%;
+    border-top: #F88C7E 5px solid;
+    padding: 3%;
+    color: #14015B;
+    font-family: "Roboto", sans-serif;
+    background: #F88C7E;
+    background: linear-gradient(180deg, rgba(248, 140, 126, 0.177) 0%, rgba(246, 246, 246, 0) 100%); }
+    .planes .plan .iconoplan {
+      padding: 10% 35%; }
+      .planes .plan .iconoplan i {
+        color: #F88C7E;
+        font-size: 5rem; }
+    .planes .plan .intro {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 3%; }
+    .planes .plan .botoncoti {
+      padding: 15px 25px 8px 25px;
+      border-radius: 0.25rem;
+      border: none;
+      font-size: 1.6rem;
+      background-color: #F88C7E; }
+      .planes .plan .botoncoti h1 {
+        color: #EDEDEE; }
+    .planes .plan .plandetalles {
+      margin-top: 5%; }
+      .planes .plan .plandetalles h1 {
+        color: #0455A5; }
+      .planes .plan .plandetalles li {
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin-bottom: 3%; }
+        .planes .plan .plandetalles li i {
+          color: #F88C7E;
+          margin-right: 5px;
+          font-size: 1.7rem; }
+    .planes .plan hr {
+      margin-top: 7%;
+      margin-bottom: 7%; }
+
+/**----------------- CHECKS  ( listados) -----------------**/
+.check {
+  border-top: #F88C7E 5px solid;
+  padding: 2%;
+  color: #14015B;
+  font-family: "Roboto", sans-serif;
+  font-size: 300;
+  background: #F88C7E;
+  background: linear-gradient(180deg, rgba(248, 140, 126, 0.177) 0%, rgba(246, 246, 246, 0) 100%); }
+  .check .plandetalles {
+    margin-top: 1%; }
+    .check .plandetalles li {
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin-bottom: 2%; }
+      .check .plandetalles li i {
+        color: #F88C7E;
+        margin-right: 5px;
+        font-size: 1.7rem; }
+
+/**----------------- BOTONES ( grupo de 2 ) -----------------**/
+#botonesseguros {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5%; }
+  #botonesseguros button {
+    border: none; }
+  #botonesseguros .botoncoti {
+    padding: 15px 25px 8px 25px;
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 1.6rem;
+    background-color: #F88C7E; }
+    #botonesseguros .botoncoti:hover {
+      box-shadow: 0 20px 20px rgba(9, 8, 8, 0.2);
+      transform: translate(0px, -10px);
+      transition: all 0.2s; }
+    #botonesseguros .botoncoti h1 {
+      color: #ffffff; }
+  #botonesseguros .botonvolver {
+    padding: 15px 25px 8px 25px;
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 1.6rem; }
+    #botonesseguros .botonvolver:hover {
+      box-shadow: 0 20px 20px rgba(9, 8, 8, 0.2);
+      transform: translate(0px, -10px);
+      transition: all 0.2s; }
+    #botonesseguros .botonvolver h1 {
+      color: #14015B; }
+
+/**----------------- BOTONES FORM -----------------**/
+#botonessegurosform {
+  width: 90%;
+  padding-top: 2%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 3%; }
+  #botonessegurosform button {
+    border: none;
+    border-radius: 0.25rem; }
+  #botonessegurosform .botoncoti {
+    padding: 20px 20px 15px 20px;
+    background-color: #F88C7E; }
+    #botonessegurosform .botoncoti h1 {
+      color: #ffffff; }
+  #botonessegurosform .botonvolver {
+    padding: 20px 20px 15px 20px;
+    background-color: #EDEDEE; }
+    #botonessegurosform .botonvolver .botonvolver h1 {
+      color: #14015B; }
+
+/**--- mediaquery Tablets ----------**/
+@media (max-width: 768px) {
+  .planes {
+    padding-left: 4%;
+    padding-right: 4%;
+    flex-direction: column; }
+    .planes .plan {
+      width: 100%; }
+      .planes .plan .iconoplan {
+        padding: 5%; }
+        .planes .plan .iconoplan i {
+          font-size: 6rem; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  #botonesseguros {
+    padding-left: 4%;
+    padding-right: 4%;
+    flex-direction: column; }
+    #botonesseguros .botoncoti {
+      margin-bottom: 3%; }
+    #botonesseguros h1 {
+      font-size: 1.3rem; } }
+
+/**--- Mediaquery Mobile 320 ----------**/
+/**--------------------------------------STYLES HEADER -------------------------------------------------------**/
+header {
+  grid-area: header;
+  background-color: #EDEDEE;
+  border-bottom: #14015B 2px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: auto; }
+  header .logo {
+    width: 19%; }
+  header nav .ulheader {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    color: #14015B;
+    justify-content: space-around;
+    list-style: none; }
+    header nav .ulheader li {
+      padding: 25px 15px; }
+      header nav .ulheader li .botoncomun:hover {
+        color: #F88C7E; }
+      header nav .ulheader li a {
+        text-decoration: none; }
+    header nav .ulheader .botoncotizar {
+      display: block;
+      color: #EDEDEE;
+      padding-left: 25px;
+      padding-right: 25px;
+      background-color: #F88C7E; }
+      header nav .ulheader .botoncotizar a {
+        color: #EDEDEE;
+        text-decoration: none; }
+
+/**--- mediaquery Tablets ----------**/
+@media (max-width: 768px) {
+  /**---header--**/
+  header {
+    padding-top: 3%;
+    padding-left: 4%;
+    padding-right: 4%; }
+    header header .logo {
+      width: 30%; }
+    header nav {
+      width: 100%; }
+      header nav .ulheader {
+        margin-top: 25px; }
+        header nav .ulheader li {
+          justify-content: space-around;
+          margin-left: 2px;
+          margin-right: 2px; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  /**---header--**/
+  header {
+    padding-bottom: 3%;
+    padding-left: 4%;
+    padding-right: 4%; }
+    header .logo {
+      width: 50%; }
+    header nav .ulheader {
+      flex-direction: column; }
+      header nav .ulheader li {
+        padding: 10px;
+        margin: 0%;
+        margin-bottom: 1%; }
+      header nav .ulheader .botoncomun {
+        background-color: #0455A5; }
+        header nav .ulheader .botoncomun a {
+          color: #EDEDEE; }
+          header nav .ulheader .botoncomun a a:hover {
+            color: #F88C7E; } }
+
+@media (min-width: 425px) and (max-width: 768px) {
+  header .logo {
+    width: 50%; }
+  header nav .ulheader li {
+    padding: 15px 5px; }
+  header nav .ulheader .botoncotizar {
+    display: block;
+    color: #EDEDEE;
+    padding-left: 15px;
+    padding-right: 20px;
+    background-color: #F88C7E; } }
+
+/**-------------------------------------- FIN STYLES HEADER -------------------------------------------------------**/
+/**-------------------------------------- STYLES PAGINA INDEX.HTML -------------------------------------------------------**/
+#mainquiensoy {
+  grid-area: main;
+  background-color: #fff; }
+  #mainquiensoy #slidehome {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../asset/img/sliders_home.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-bottom: #F88C7E 5px solid; }
+  #mainquiensoy #quiensoy {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; }
+    #mainquiensoy #quiensoy .imgizq {
+      width: 45%;
+      height: 40vh;
+      background-image: url(../asset/img/nahuellobo.jpg);
+      background-size: cover;
+      align-items: center; }
+    #mainquiensoy #quiensoy .texto {
+      width: 45%;
+      align-items: center; }
+      #mainquiensoy #quiensoy .texto h1 {
+        color: #0455A5; }
+      #mainquiensoy #quiensoy .texto p {
+        color: #14015B;
+        font-size: 1.4rem; }
+
+/**--- mediaquery Tablets ----------**/
+@media (max-width: 768px) {
+  #mainquiensoy #slidehome {
+    height: 40vh; }
+  #mainquiensoy #quiensoy {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-direction: column; }
+    #mainquiensoy #quiensoy .imgizq {
+      width: 100%; }
+    #mainquiensoy #quiensoy .texto {
+      width: 100%;
+      font-size: 1.6rem;
+      color: #14015B; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  #mainquiensoy #slidehome {
+    height: 33vh;
+    background-position: center top; }
+  #mainquiensoy #quiensoy .texto {
+    font-size: 1.4rem; } }
+
+/**-------------------------------------- FIN STYLES PAGINA INDEX.HTML -------------------------------------------------------**/
+/**-------------------------------------- STYLES PAGINA SEGUROS.HTML -------------------------------------------------------**/
+#mainseguros {
+  grid-area: main;
+  background-color: #fff; }
+  #mainseguros #categorias {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    border-bottom: #F88C7E 5px solid; }
+    #mainseguros #categorias h1 {
+      padding-bottom: 3%;
+      color: #0455A5;
+      text-align: center;
+      font-family: "Roboto", sans-serif; }
+    #mainseguros #categorias h3 {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1rem;
+      color: #14015B; }
+    #mainseguros #categorias #figuras {
+      width: 100%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      #mainseguros #categorias #figuras .figuraborde {
+        display: flex;
+        flex-basis: auto;
+        padding-right: 3%;
+        padding-bottom: 3%;
+        margin-bottom: 5%;
+        border-right: #F88C7E 3px solid;
+        transform: scale(1, 1); }
+        #mainseguros #categorias #figuras .figuraborde img:hover {
+          transform: scale(1.1, 1.1);
+          transform: translate(0px, -15px);
+          transition: all 1s; }
+    #mainseguros #categorias figure i {
+      margin-left: 40%;
+      font-weight: 500;
+      font-size: 2rem;
+      color: #F88C7E; }
+  #mainseguros #novedades {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #0455A5; }
+    #mainseguros #novedades h2 {
+      color: #F88C7E;
+      font-family: "Roboto", sans-serif; }
+    #mainseguros #novedades h3 {
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      padding-bottom: 2%; }
+    #mainseguros #novedades p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #fff; }
+
+/**--- mediaquery Tablets ----------**/
+@media (max-width: 768px) {
+  #categorias {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%; }
+    #categorias #figuras {
+      padding-bottom: 3%;
+      justify-content: center; }
+      #categorias #figuras .figuraborde {
+        padding-right: 3%;
+        margin-left: 3%; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  .figuraborde {
+    padding-right: 2%;
+    margin-left: 3%; } }
+
+/**--- Mediaquery Mobile 320 ----------**/
+@media (max-width: 320px) {
+  #categorias {
+    padding-left: 2%;
+    padding-right: 2%; }
+    #categorias #figuras {
+      padding-bottom: 4%; }
+      #categorias #figuras .figuraborde {
+        margin-left: 2%;
+        width: 42%; } }
+
+/**--- Mediaquery Rango especifico ----------**/
+@media (max-width: 767px) and (min-width: 424px) {
+  .figuraborde {
+    margin-left: 0;
+    width: 30%; } }
+
+/**-------------------------------------- FIN STYLES PAGINA SEGUROS.HTML -------------------------------------------------------**/
+/**-------------------------------------- STYLES PAGINA HOGAR.HTML -------------------------------------------------------**/
+#mainhogar {
+  grid-area: main;
+  background-color: #fff; }
+  #mainhogar #slidehogar {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../asset/img/sliders_hogar.jpg);
+    background-size: cover;
+    border-bottom: #F88C7E 5px solid; }
+  #mainhogar #hogar {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px; }
+    #mainhogar #hogar .imgizqhogar {
+      width: 35%;
+      height: 45vh;
+      background-image: url(../asset/img/segurohogar.svg);
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat; }
+    #mainhogar #hogar .texto {
+      width: 50%; }
+      #mainhogar #hogar .texto h1 {
+        color: #0455A5; }
+      #mainhogar #hogar .texto p {
+        color: #14015B;
+        font-size: 1.4rem; }
+    #mainhogar #hogar .desplegable {
+      width: 100%;
+      padding-top: 1%;
+      padding-bottom: 2%;
+      margin-top: 1%;
+      width: 100%; }
+      #mainhogar #hogar .desplegable .accordion {
+        font-size: 1rem;
+        font-weight: 300;
+        background-color: #EDEDEE;
+        color: #14015B;
+        padding: 10px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        transition: 0.3s;
+        border-bottom: #F88C7E 2px solid; }
+        #mainhogar #hogar .desplegable .accordion:hover {
+          color: #F88C7E; }
+      #mainhogar #hogar .desplegable .panel {
+        padding: 5px 10px;
+        display: none;
+        overflow: hidden; }
+        #mainhogar #hogar .desplegable .panel p {
+          color: #14015B; }
+
+/**-----------------BOTONES en _Partial.scss -----------------**/
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width: 768px) {
+  #mainhogar #slidehogar {
+    height: 40vh; }
+  #mainhogar #hogar {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-direction: column; }
+    #mainhogar #hogar .imgizqhogar {
+      width: 80%;
+      font-size: 1.6rem; }
+    #mainhogar #hogar .texto {
+      width: 90%;
+      font-size: 1.6rem; }
+    #mainhogar #hogar #desplegable {
+      width: 85%; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  #mainhogar #slidehogar {
+    height: 33vh;
+    background-position: center top; }
+  #mainhogar #hogar .imgizqhogar {
+    width: 90%; }
+  #mainhogar #hogar .texto {
+    font-size: 1.4rem; } }
+
+/**--- Mediaquery Mobile 320 ----------**/
+/**-------------------------------------- FIN STYLES PAGINA HOGAR.HTML -------------------------------------------------------**/
+/**-------------------------------------- STYLES PAGINA AUTO.HTML -------------------------------------------------------**/
+#mainauto {
+  grid-area: main;
+  background-color: #fff; }
+  #mainauto #slideauto {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../asset/img/sliders_auto.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-bottom: #F88C7E 5px solid; }
+  #mainauto #auto {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; }
+    #mainauto #auto .imgizqauto {
+      width: 35%;
+      height: 45vh;
+      background-image: url(../asset/img/seguroauto.svg);
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat; }
+    #mainauto #auto .texto {
+      width: 50%; }
+      #mainauto #auto .texto h1 {
+        color: #0455A5; }
+      #mainauto #auto .texto p {
+        color: #14015B;
+        font-size: 1.4rem; }
+
+/**----------------- PLANES en _Partial.scss -----------------**/
+/**-----------------BOTONES en _Partial.scss -----------------**/
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width: 768px) {
+  #mainauto #slideauto {
+    height: 40vh; }
+  #mainauto #auto {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-direction: column; }
+    #mainauto #auto .imgizqauto {
+      width: 70%;
+      font-size: 1.6rem; }
+    #mainauto #auto .texto {
+      width: 85%;
+      font-size: 1.6rem; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  #mainauto #slideauto {
+    height: 33vh;
+    background-position: center top; }
+  #mainauto #auto .imgizqauto {
+    width: 90%; }
+  #mainauto #auto .texto {
+    font-size: 1.4rem; } }
+
+/**--- Mediaquery Mobile 320 ----------**/
+/**-------------------------------------- FIN STYLES PAGINA AUTO.HTML -------------------------------------------------------**/
+/**-------------------------------------- STYLES PAGINA MOTO.HTML -------------------------------------------------------**/
+#mainmoto {
+  grid-area: main;
+  background-color: #fff; }
+  #mainmoto #slidemoto {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../asset/img/sliders_moto.jpg);
+    background-size: cover;
+    background-position: top center;
+    border-bottom: #F88C7E 5px solid; }
+  #mainmoto #moto {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; }
+    #mainmoto #moto .imgizqmoto {
+      width: 35%;
+      height: 45vh;
+      background-image: url(../asset/img/seguromoto.svg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+    #mainmoto #moto .texto {
+      width: 50%; }
+      #mainmoto #moto .texto h1 {
+        color: #0455A5; }
+      #mainmoto #moto .texto p {
+        color: #14015B;
+        font-size: 1.4rem; }
+
+/**----------------- PLANES en _Partial.scss -----------------**/
+/**-----------------BOTONES en _Partial.scss -----------------**/
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width: 768px) {
+  #mainmoto #slidemoto {
+    height: 40vh; }
+  #mainmoto #moto {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-direction: column; }
+    #mainmoto #moto .imgizqmoto {
+      width: 70%;
+      font-size: 1.6rem; }
+    #mainmoto #moto .texto {
+      width: 85%;
+      font-size: 1.6rem; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  #mainmoto #slidemoto {
+    height: 33vh;
+    background-position: center top; } }
+
+/**--- Mediaquery Mobile 320 ----------**/
+/**-------------------------------------- FIN STYLES PAGINA MOTO.HTML -------------------------------------------------------**/
+/**-------------------------------------- STYLES PAGINA ACCIDENTES.HTML -------------------------------------------------------**/
+#mainaccidentes {
+  grid-area: main;
+  background-color: #fff; }
+  #mainaccidentes #slideaccidente {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../asset/img/sliders_accidentes.jpg);
+    background-size: cover;
+    background-position: top center;
+    border-bottom: #F88C7E 5px solid; }
+  #mainaccidentes #accidente {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; }
+    #mainaccidentes #accidente .imgizqaccidente {
+      width: 35%;
+      height: 45vh;
+      background-image: url(../asset/img/seguroaccidentes.svg);
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat; }
+    #mainaccidentes #accidente .texto {
+      width: 50%; }
+      #mainaccidentes #accidente .texto .textoparte1 {
+        margin-bottom: 3%; }
+        #mainaccidentes #accidente .texto .textoparte1 h1 {
+          color: #0455A5; }
+        #mainaccidentes #accidente .texto .textoparte1 p {
+          color: #14015B;
+          font-size: 1.4rem; }
+
+/**----------------- CHECKS en _Partial.scss -----------------**/
+/**-----------------BOTONES en _Partial.scss -----------------**/
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width: 768px) {
+  #mainaccidentes #slideaccidente {
+    height: 40vh; }
+  #mainaccidentes #accidente {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-direction: column; }
+    #mainaccidentes #accidente .imgizqaccidente {
+      width: 90%;
+      font-size: 1.6rem; }
+    #mainaccidentes #accidente .texto {
+      width: 85%;
+      font-size: 1.6rem; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  #mainaccidentes #slideaccidente {
+    height: 33vh;
+    background-position: center top; } }
+
+/**--- Mediaquery Mobile 320 ----------**/
+/**-------------------------------------- FIN STYLES PAGINA ACCIDENTES.HTML -------------------------------------------------------**/
+/**-------------------------------------- STYLES PAGINA COMECIO.HTML -------------------------------------------------------**/
+#maincomercio {
+  grid-area: main;
+  background-color: #fff; }
+  #maincomercio #slidecomercio {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../asset/img/sliders_comercio.jpg);
+    background-size: cover;
+    background-position: top left;
+    border-bottom: #F88C7E 5px solid; }
+  #maincomercio #comercio {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px; }
+    #maincomercio #comercio .imgizqcomercio {
+      width: 35%;
+      height: 55vh;
+      background-image: url(../asset/img/segurocomercio.svg);
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat; }
+    #maincomercio #comercio .texto {
+      width: 55%; }
+      #maincomercio #comercio .texto .textoparte1 {
+        margin-bottom: 3%; }
+        #maincomercio #comercio .texto .textoparte1 h1 {
+          color: #0455A5; }
+        #maincomercio #comercio .texto .textoparte1 p {
+          color: #14015B;
+          font-size: 1.4rem; }
+
+/**---- CHECKS en _Partial.scss -----**/
+/**----- BOTONES en _Partial.scss ---**/
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width: 768px) {
+  #maincomercio #slidecomercio {
+    height: 40vh; }
+  #maincomercio #comercio {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-direction: column; }
+    #maincomercio #comercio .imgizqcomercio {
+      width: 70%;
+      font-size: 1.6rem; }
+    #maincomercio #comercio .texto {
+      width: 85%;
+      font-size: 1.6rem; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  #maincomercio #slidemcomercio {
+    height: 33vh;
+    background-position: center center; } }
+
+/**--- Mediaquery Mobile 320 ----------**/
+/**-------------------------------------- FIN STYLES PAGINA COMECIO.HTML -------------------------------------------------------**/
+/**-------------------------------------- STYLES PAGINA RETIRO.HTML -------------------------------------------------------**/
+#mainretiro {
+  grid-area: main;
+  background-color: #fff; }
+  #mainretiro #slideretiro {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../asset/img/sliders_retiro.jpg);
+    background-size: cover;
+    background-position: top center;
+    border-bottom: #F88C7E 5px solid; }
+  #mainretiro #retiro {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px; }
+    #mainretiro #retiro .imgizqretiro {
+      width: 35%;
+      height: 45vh;
+      background-image: url(../asset/img/seguroretiro.svg);
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat; }
+    #mainretiro #retiro .texto {
+      width: 50%; }
+      #mainretiro #retiro .texto h1 {
+        color: #0455A5; }
+      #mainretiro #retiro .texto p {
+        color: #14015B;
+        font-size: 1.4rem; }
+    #mainretiro #retiro .desplegable {
+      width: 100%;
+      padding-top: 1%;
+      padding-bottom: 2%;
+      margin-top: 1%;
+      width: 100%; }
+      #mainretiro #retiro .desplegable .accordion {
+        font-size: 1rem;
+        font-weight: 300;
+        background-color: #EDEDEE;
+        color: #14015B;
+        padding: 10px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        transition: 0.3s;
+        border-bottom: #F88C7E 2px solid; }
+        #mainretiro #retiro .desplegable .accordion:hover {
+          color: #F88C7E; }
+      #mainretiro #retiro .desplegable .panel {
+        padding: 5px 10px;
+        display: none;
+        overflow: hidden; }
+        #mainretiro #retiro .desplegable .panel p {
+          color: #14015B; }
+
+/**-----------------BOTONES en _Partial.scss -----------------**/
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width: 768px) {
+  #mainretiro #slideretiro {
+    height: 40vh; }
+  #mainretiro #retiro {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-direction: column; }
+    #mainretiro #retiro .imgizqretiro {
+      width: 70%;
+      font-size: 1.6rem; }
+    #mainretiro #retiro .texto {
+      width: 85%;
+      font-size: 1.6rem; }
+    #mainretiro #retiro #desplegable {
+      width: 85%; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  #mainretiro #slideretiro {
+    height: 33vh;
+    background-position: center center; } }
+
+/**--- Mediaquery Mobile 320 ----------**/
+/**-------------------------------------- FIN STYLES PAGINA RETIROS.HTML -------------------------------------------------------**/
+/**--------------------------------------  STYLES pagina FORM -------------------------------------------------------**/
+#maincotizacion {
+  grid-area: main;
+  background-color: #fff; }
+  #maincotizacion #slidecotizar {
+    width: 100%;
+    height: 15vh;
+    background-image: url(../asset/img/sliders_textura.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-bottom: #F88C7E 5px solid; }
+  #maincotizacion #cotizacion {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; }
+    #maincotizacion #cotizacion .imgizqcotizar {
+      width: 35%;
+      display: flex;
+      height: 50vh;
+      background-image: url(../asset/img/quierocotizar.svg);
+      background-size: cover;
+      background-position: top right;
+      background-repeat: no-repeat; }
+    #maincotizacion #cotizacion .texto {
+      width: 50%; }
+      #maincotizacion #cotizacion .texto .formulario {
+        width: 95%; }
+        #maincotizacion #cotizacion .texto .formulario h1 {
+          margin-top: 1%;
+          margin-bottom: 3%;
+          color: #0455A5; }
+        #maincotizacion #cotizacion .texto .formulario h2 {
+          margin-top: 1%;
+          margin-bottom: 3%;
+          color: #0455A5; }
+        #maincotizacion #cotizacion .texto .formulario .form-group input {
+          width: 100%;
+          padding: 2%;
+          margin-bottom: 2%;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5;
+          border: 1px solid #0455A5;
+          border-radius: 0.25rem; }
+        #maincotizacion #cotizacion .texto .formulario .form-group select {
+          width: 100%;
+          padding: 2%;
+          margin-bottom: 2%;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5;
+          border: 1px solid #0455A5;
+          border-radius: 0.25rem; }
+
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width: 768px) {
+  #maincotizacion #slidecotizar {
+    height: 10vh;
+    background-size: cover;
+    background-position: center; }
+  #maincotizacion #cotizacion {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-direction: column; }
+    #maincotizacion #cotizacion .imgizqcotizar {
+      width: 85%; }
+    #maincotizacion #cotizacion .texto {
+      width: 100%; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  #maincotizacion #slidecotizar {
+    height: 7vh; }
+  #maincotizacion #cotizacion .imgizqcotizar {
+    width: 100%; }
+  #maincotizacion #cotizacion .texto {
+    width: 100%; }
+    #maincotizacion #cotizacion .texto #botonessegurosform .botoncoti {
+      padding: 4% 4% 2% 4%; }
+      #maincotizacion #cotizacion .texto #botonessegurosform .botoncoti h1 {
+        font-size: 1.3rem; }
+    #maincotizacion #cotizacion .texto #botonessegurosform .botonvolver {
+      padding: 4% 4% 2% 4%; }
+      #maincotizacion #cotizacion .texto #botonessegurosform .botonvolver h1 {
+        font-size: 1.3rem; } }
+
+/**--- Mediaquery Mobile 320 ----------**/
+/**--------------------------------------  FIN STYLES pagina FORM -------------------------------------------------------**/
+/**-------------------------------------- STYLES FOOTER -------------------------------------------------------**/
+footer {
+  width: 100%;
+  grid-area: footer;
+  border-top: #F88C7E 5px solid;
+  background-color: #14015B;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: row; }
+  footer .pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    footer .pie li {
+      justify-items: center;
+      align-items: center;
+      padding: 15px;
+      border-left: #F88C7E 2px solid; }
+      footer .pie li h2 {
+        font-size: 1rem;
+        color: #F88C7E;
+        font-family: "Roboto", sans-serif; }
+      footer .pie li p {
+        font-family: "Roboto", sans-serif;
+        color: #fff;
+        font-size: 1rem; }
+  footer .redes {
+    display: flex; }
+  footer i {
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 3px; }
+
+.what {
+  position: fixed;
+  bottom: 5px;
+  right: 28px;
+  color: #79c000;
+  font-size: 4rem;
+  z-index: 50; }
+
+/**--- mediaquery Tablets ----------**/
+@media (max-width: 768px) {
+  footer {
+    padding-left: 4%;
+    padding-right: 4%; }
+    footer .pie {
+      display: flex;
+      flex-direction: column; }
+      footer .pie li {
+        align-items: center;
+        padding: 15px; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  li {
+    padding: 10px;
+    margin: 0%;
+    margin-bottom: 1%; }
+    li .ssn img {
+      width: 85%; } }
+
+/**--- Mediaquery Mobile 320 ----------**/
+@media (max-width: 320px) {
+  .ssn img {
+    width: 70%; } }
+
+/**--- Mediaquery Rango especifico ----------**/
+@media (min-width: 320px) and (max-width: 425px) {
+  .ssn img {
+    width: 75%; } }
+
+/**-------------------------------------- FIN STYLES FOOTER -------------------------------------------------------**/
+/**-------------------------------------- Error 404 -------------------------------------------------------**/
+#mainerror404 {
+  grid-area: main;
+  background-image: linear-gradient(to left, #fff, #7d7d7d); }
+  #mainerror404 #error {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px; }
+    #mainerror404 #error .img404 {
+      width: 70%;
+      height: 60vh;
+      background-image: url(../asset/img/404.svg);
+      background-size: contain;
+      background-position: top center;
+      background-repeat: no-repeat; }
+    #mainerror404 #error .texto {
+      width: 20%; }
+      #mainerror404 #error .texto h1 {
+        color: #0455A5;
+        font-size: 2.4rem; }
+      #mainerror404 #error .texto p {
+        color: #14015B;
+        font-size: 2rem; }
+
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width: 768px) {
+  #mainerror404 #error {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    flex-direction: column; }
+    #mainerror404 #error .img404 {
+      width: 100%;
+      height: 45vh;
+      margin-bottom: 3%; }
+    #mainerror404 #error .texto {
+      width: 100%;
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 3%; } }
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width: 425px) {
+  #mainerror404 #error {
+    flex-direction: column; }
+    #mainerror404 #error .img404 {
+      width: 90%; }
+    #mainerror404 #error .texto {
+      width: 90%;
+      font-size: 1.6rem; } }
+
+/**--- Mediaquery Mobile 320 ----------**/
+/**-------------------------------------- FIN STYLES PAGINA HOGAR.HTML -------------------------------------------------------**/

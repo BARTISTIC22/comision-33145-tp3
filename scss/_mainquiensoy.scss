@@ -1,0 +1,106 @@
+
+
+/**-------------------------------------- STYLES PAGINA INDEX.HTML -------------------------------------------------------**/
+
+#mainquiensoy {
+    grid-area: main;
+    background-color: $fondoprincipal;
+
+    #slidehome {
+        width: 100%;
+        height: 30vh;
+        background-image: $slidehome;
+        background-size: cover;
+        background-position: center center;
+        border-bottom: $colordestaque 5px solid;
+    }
+
+    #quiensoy {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .imgizq {
+            width: 45%;
+            height: 40vh;
+            background-image: $iconohome;
+            background-size: cover;
+            align-items: center;
+        }
+
+        .texto {
+            width: 45%;
+            align-items: center;
+
+            h1 {
+                color: $colorsecundario;
+            }
+
+            p {
+                color: $colorprincipal;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+}
+
+/**--- mediaquery Tablets ----------**/
+@media (max-width:768px) {
+
+    #mainquiensoy {
+
+        #slidehome {
+            height: 40vh;
+        }
+
+        #quiensoy {
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            flex-direction: column;
+
+            .imgizq {
+                width: 100%;
+            }
+
+            .texto {
+                width: 100%;
+                font-size: 1.6rem;
+                color: #14015B;
+               
+            }
+        }
+
+    }
+}
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width:425px) {
+
+    #mainquiensoy {
+        #slidehome {
+            height: 33vh;
+            background-position: center top;
+        }
+
+        #quiensoy {
+            .texto {
+                font-size: 1.4rem;
+            }
+        }
+
+    }
+}
+
+
+/**-------------------------------------- FIN STYLES PAGINA INDEX.HTML -------------------------------------------------------**/

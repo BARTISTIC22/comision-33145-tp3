@@ -1,0 +1,107 @@
+
+/**-------------------------------------- STYLES PAGINA COMECIO.HTML -------------------------------------------------------**/
+#maincomercio {
+
+    grid-area: main;
+    background-color: $fondoprincipal;
+
+    #slidecomercio {
+        width: 100%;
+        height: 30vh;
+        background-image: $slide5;
+        background-size: cover;
+        background-position: top left;
+        border-bottom: $colordestaque 5px solid;
+    }
+
+    #comercio {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        .imgizqcomercio {
+            width: 35%;
+            height: 55vh;
+            background-image: $icono5;
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+
+        .texto {
+            width: 55%;
+
+            .textoparte1 {
+                margin-bottom: 3%;
+
+                h1 {
+                    color: $colorsecundario;
+                }
+
+                p {
+                    color: $colorprincipal;
+                    font-size: 1.4rem;
+                }
+            }
+
+        }
+
+
+
+    }
+}
+
+/**---- CHECKS en _Partial.scss -----**/
+/**----- BOTONES en _Partial.scss ---**/
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width:768px) {
+    #maincomercio {
+        #slidecomercio {
+            height: 40vh;
+        }
+
+        #comercio {
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            flex-direction: column;
+
+            .imgizqcomercio {
+                width: 70%;
+                font-size: 1.6rem;
+            }
+
+            .texto {
+                width: 85%;
+                font-size: 1.6rem;
+            }
+
+        }
+
+    }
+}
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width:425px) {
+    #maincomercio {
+        #slidemcomercio {
+            height: 33vh;
+            background-position: center center;
+        }
+
+    }
+}
+
+/**--- Mediaquery Mobile 320 ----------**/
+@media (max-width:320px) {}
+
+/**-------------------------------------- FIN STYLES PAGINA COMECIO.HTML -------------------------------------------------------**/

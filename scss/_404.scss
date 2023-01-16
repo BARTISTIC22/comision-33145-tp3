@@ -1,0 +1,100 @@
+
+/**-------------------------------------- Error 404 -------------------------------------------------------**/
+#mainerror404 {
+    grid-area: main;
+    background-image: linear-gradient(to left, $fondoprincipal, rgb(125, 125, 125));
+
+
+    #error {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+
+       
+        .img404 {
+            width: 70%;
+            height: 60vh;
+            background-image:$error;
+            background-size: contain;
+            background-position: top center;
+            background-repeat: no-repeat;
+
+        }
+        .texto {
+            width: 20%;
+            h1 {
+                color: $colorsecundario;
+                font-size: 2.4rem;
+            }
+            
+            p {
+                color: $colorprincipal;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width:768px) {
+
+    #mainerror404 {
+        
+        #error {
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 20%;
+            padding-bottom: 20%;
+            flex-direction: column;
+
+            .img404 {
+                width: 100%;
+                height: 45vh;
+                margin-bottom: 3%;
+
+            }
+            .texto {
+                width: 100%;
+                font-size: 1.6rem;
+                text-align: center;
+                margin-bottom: 3%;
+            }
+        }
+    }
+}
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width:425px) {
+
+    #mainerror404 {
+        #error{
+            flex-direction: column;
+
+            .img404 {
+                width: 90%;
+
+            }
+            .texto {
+                width: 90%;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+/**--- Mediaquery Mobile 320 ----------**/
+@media (max-width:320px) {}
+
+
+/**-------------------------------------- FIN STYLES PAGINA HOGAR.HTML -------------------------------------------------------**/
+
+

@@ -1,0 +1,144 @@
+
+
+
+/**-------------------------------------- STYLES PAGINA RETIRO.HTML -------------------------------------------------------**/
+
+#mainretiro {
+    grid-area: main;
+    background-color: $fondoprincipal;
+
+    #slideretiro {
+        width: 100%;
+        height: 30vh;
+        background-image: $slide6;
+        background-size: cover;
+        background-position: top center;
+        border-bottom: $colordestaque 5px solid;
+    }
+
+    #retiro {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+
+
+        .imgizqretiro {
+            width: 35%;
+            height: 45vh;
+            background-image: $icono6;
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+        .texto {
+            width: 50%;
+            h1 {
+                color: $colorsecundario;
+            }
+
+            p {
+                color: $colorprincipal;
+                font-size: 1.4rem;
+            }
+        }
+
+        .desplegable {
+            width: 100%;
+            padding-top: 1%;
+            padding-bottom: 2%;
+            margin-top: 1%;
+            width: 100%;
+
+            .accordion {
+                font-size: 1rem;
+                font-weight: 300;
+                background-color: #EDEDEE;
+                color: $colorprincipal;
+                padding: 10px;
+                margin-bottom: 3px;
+                margin-top: 3px;
+                width: 100%;
+                text-align: left;
+                border: none;
+                transition: 0.3s;
+                border-bottom: $colordestaque 2px solid;
+
+                &:hover {
+                    color: $colordestaque;
+                }
+            }
+
+            .panel {
+                padding: 5px 10px;
+                display: none;
+                overflow: hidden;
+
+                p {
+                    color: $colorprincipal;
+                }
+            }
+        }
+
+
+    }
+}
+
+/**-----------------BOTONES en _Partial.scss -----------------**/
+
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width:768px) {
+    #mainretiro {
+        #slideretiro {
+            height: 40vh;
+        }
+
+        #retiro {
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            flex-direction: column;
+
+            .imgizqretiro {
+                width: 70%;
+                font-size: 1.6rem;
+            }
+
+            .texto {
+                width: 85%;
+                font-size: 1.6rem;
+            }
+            #desplegable {
+                width: 85%;
+
+            }
+
+        }
+
+    }
+}
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width:425px) {
+    #mainretiro {
+        #slideretiro {
+            height: 33vh;
+            background-position: center center;
+        }
+
+    }
+}
+
+/**--- Mediaquery Mobile 320 ----------**/
+@media (max-width:320px) {}
+
+
+/**-------------------------------------- FIN STYLES PAGINA RETIROS.HTML -------------------------------------------------------**/

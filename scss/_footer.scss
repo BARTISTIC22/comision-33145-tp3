@@ -1,0 +1,112 @@
+
+
+/**-------------------------------------- STYLES FOOTER -------------------------------------------------------**/
+
+footer {
+    width: 100%;
+    grid-area: footer;
+    border-top: $colordestaque 5px solid;
+    background-color: $colorprincipal;
+    padding-left: $margenbox;
+    padding-right: $margenbox;
+    display: flex;
+    flex-direction: row;
+
+    .pie {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        li {
+            justify-items: center;
+            align-items: center;
+            padding: 15px;
+            border-left: $colordestaque 2px solid;
+
+
+            h2 {
+                font-size: 1rem;
+                color: $colordestaque;
+                font-family: $font;
+            }
+
+            p {
+                font-family: $font;
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .redes {
+        display: flex;
+    }
+
+    i {
+        display: flex;
+        color: #fff;
+        font-size: 1.5rem;
+        margin-right: 3px;
+    }
+}
+
+.what {
+    @include whatsapp;
+}
+
+/**--- mediaquery Tablets ----------**/
+@media (max-width:768px) {
+    footer {
+        padding-left: 4%;
+        padding-right: 4%;
+
+        .pie {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                align-items: center;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+/**--- Mediaquery Mobile 425 ----------**/
+
+@media (max-width:425px) {
+  
+
+            li {
+                padding: 10px;
+                margin: 0%;
+                margin-bottom: 1%;
+
+                .ssn {img {
+                    width: 85%;}
+                              
+                    }
+            }
+    
+}
+
+/**--- Mediaquery Mobile 320 ----------**/
+@media (max-width:320px) {
+
+
+.ssn {img {
+    width: 70%;}
+              
+    }
+}
+
+/**--- Mediaquery Rango especifico ----------**/
+@media (min-width:320px) and (max-width:425px) {
+    .ssn {img {
+        width: 75%;}
+                  
+        }
+    }
+
+    /**-------------------------------------- FIN STYLES FOOTER -------------------------------------------------------**/

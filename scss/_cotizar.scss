@@ -1,0 +1,160 @@
+/**--------------------------------------  STYLES pagina FORM -------------------------------------------------------**/
+
+#maincotizacion {
+    grid-area: main;
+    background-color: $fondoprincipal;
+
+    #slidecotizar {
+        width: 100%;
+        height: 15vh;
+        background-image: $textura;
+        background-size: cover;
+        background-position: center center;
+        border-bottom: $colordestaque 5px solid;
+    }
+
+    #cotizacion {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .imgizqcotizar {
+            width: 35%;
+            display: flex;
+            height: 50vh;
+            background-image: url(../asset/img/quierocotizar.svg);
+            background-size: cover;
+            background-position: top right;
+            background-repeat: no-repeat;
+        }
+        .texto {
+            width: 50%;
+            .formulario {
+                width: 95%;
+                h1 {
+                    margin-top: 1%;
+                    margin-bottom: 3%;
+                    color: $colorsecundario;
+                }
+
+                h2 {
+                    margin-top: 1%;
+                    margin-bottom: 3%;
+                    color: $colorsecundario;
+                }
+
+                .form-group {
+                
+                    input {
+                        width: 100%;
+                        padding: 2%;
+                        margin-bottom: 2%;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        border: 1px solid $colorsecundario;
+                        border-radius: 0.25rem;
+                    }
+
+                    select {
+                        width: 100%;
+                        padding: 2%;
+                        margin-bottom: 2%;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        border: 1px solid $colorsecundario;
+                        border-radius: 0.25rem;
+                    }
+    
+                }
+                
+            }
+        }
+
+    }
+}
+
+
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width:768px) {
+    #maincotizacion {
+    #slidecotizar {
+            height: 10vh;
+            background-size: cover;
+            background-position: center;
+        }
+        #cotizacion {
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            flex-direction: column;
+
+        .imgizqcotizar {
+            width: 85%;
+        }
+
+       .texto {
+            width:100%;
+        
+        }
+
+    }
+
+}
+}
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width:425px) {
+
+    #maincotizacion {
+        #slidecotizar {
+                height: 7vh;
+            }
+            #cotizacion {
+            .imgizqcotizar {
+                width:100%;
+            }
+    
+           .texto {
+            width:100%;
+
+                #botonessegurosform { 
+                    .botoncoti {
+                        padding: 4% 4% 2% 4%;  
+                        h1{ font-size:1.3rem;}
+                    }
+
+                    .botonvolver {
+                        padding: 4% 4% 2% 4%;  
+                        h1{ font-size:1.3rem;}
+                    }
+                       
+                
+                }
+           
+           
+            
+            }
+    
+        }
+    
+    }
+
+
+
+
+}
+
+/**--- Mediaquery Mobile 320 ----------**/
+@media (max-width:320px) {}
+
+/**--------------------------------------  FIN STYLES pagina FORM -------------------------------------------------------**/

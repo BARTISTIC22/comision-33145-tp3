@@ -1,0 +1,163 @@
+
+
+/**-------------------------------------- STYLES PAGINA SEGUROS.HTML -------------------------------------------------------**/
+
+
+#mainseguros {
+    grid-area: main;
+    background-color: $fondoprincipal;
+
+    #categorias {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3%;
+        border-bottom: $colordestaque 5px solid;
+
+        h1 {
+            padding-bottom: 3%;
+            color: $colorsecundario;
+            text-align: center;
+            font-family: $font;
+
+        }
+
+        h3 {
+            font-family: $font;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1rem;
+            color: $colorprincipal;
+        }
+
+        #figuras {
+            width: 100%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .figuraborde {
+                display: flex;
+                flex-basis: auto;
+                padding-right: 3%;
+                padding-bottom: 3%;
+                margin-bottom: 5%;
+                border-right: $colordestaque 3px solid;
+                transform: scale(1, 1);
+
+                img:hover {
+                    transform: scale(1.1, 1.1);
+                    transform: translate(0px, -15px);
+                    transition: all 1s;
+                }
+
+            }
+
+
+
+        }
+
+        figure i {
+            margin-left: 40%;
+            font-weight: 500;
+            font-size: 2rem;
+            color: $colordestaque;
+        }
+
+
+    }
+
+    #novedades {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        background-color: $colorsecundario;
+
+        h2 {
+            color:$colordestaque;
+            font-family: $font;
+        }
+
+        h3 {
+            color: #fff;
+            font-family: $font;
+            font-weight: 300;
+            padding-bottom: 2%;
+        }
+
+        p {
+            font-family: $font;
+            font-weight: 300;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+    }
+
+}
+
+/**--- mediaquery Tablets ----------**/
+@media (max-width:768px) {
+    #categorias {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3%;
+
+        #figuras {
+            padding-bottom: 3%;
+            justify-content: center;
+
+            .figuraborde {
+                padding-right: 3%;
+                margin-left: 3%;
+            }
+        }
+    }
+
+}
+
+/**--- Mediaquery Mobile 425 ----------**/
+@media (max-width:425px) {
+    .figuraborde {
+        padding-right: 2%;
+        margin-left: 3%;
+    }
+
+}
+
+/**--- Mediaquery Mobile 320 ----------**/
+@media (max-width:320px) {
+
+    #categorias {
+        padding-left: 2%;
+        padding-right: 2%;
+
+        #figuras {
+            padding-bottom: 4%;
+
+            .figuraborde {
+                margin-left: 2%;
+                width: 42%;
+            }
+        }
+    }
+
+}
+
+/**--- Mediaquery Rango especifico ----------**/
+@media (max-width:767px) and (min-width:424px) {
+    .figuraborde {
+        margin-left:0;
+        width: 30%;
+    }
+
+}
+
+
+/**-------------------------------------- FIN STYLES PAGINA SEGUROS.HTML -------------------------------------------------------**/

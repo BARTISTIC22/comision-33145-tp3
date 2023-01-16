@@ -1,0 +1,233 @@
+ /**----------------- ELEMENTOS  INDEPEDIENTES -----------------**/
+
+ /**----------------- PLANES ( modulos de 3 ) -----------------**/
+ .planes {
+     padding-top: 2%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 25px;
+
+     .plan {
+         width: 30%;
+         border-top: $colordestaque 5px solid;
+         padding: 3%;
+         color: $colorprincipal;
+         font-family: $font;
+         background: $colordestaque;
+         background: linear-gradient(180deg, rgba(248, 140, 126, 0.177) 0%, rgba(246, 246, 246, 0) 100%);
+
+         .iconoplan {
+             padding: 10% 35%;
+
+             i {
+                 color: $colordestaque;
+                 font-size: 5rem;
+             }
+         }
+
+
+         .intro {
+             font-size: 1.5rem;
+             font-weight: 500;
+             margin-bottom: 3%;
+         }
+
+         .botoncoti {
+             @include botones;
+             background-color: $colordestaque;
+
+             h1 {
+                 color: #EDEDEE;
+             }
+
+
+         }
+
+         .plandetalles {
+             margin-top: 5%;
+
+             h1 {
+                 color: $colorsecundario;
+             }
+
+             li {
+                 font-size: 1.3rem;
+                 font-weight: 300;
+                 margin-bottom: 3%;
+
+                 i {
+                     color: $colordestaque;
+                     margin-right: 5px;
+                     font-size: 1.7rem;
+                 }
+             }
+
+
+         }
+
+         hr {
+             margin-top: 7%;
+             margin-bottom: 7%;
+         }
+
+     }
+
+ }
+
+ /**----------------- CHECKS  ( listados) -----------------**/
+
+ .check {
+     border-top: $colordestaque 5px solid;
+     padding: 2%;
+     color: $colorprincipal;
+     font-family: $font;
+     font-size: 300;
+     background: $colordestaque;
+     background: linear-gradient(180deg, rgba(248, 140, 126, 0.177) 0%, rgba(246, 246, 246, 0) 100%);
+
+     .plandetalles {
+         margin-top: 1%;
+
+         li {
+             font-size: 1.3rem;
+             font-weight: 300;
+             margin-bottom: 2%;
+
+             i {
+                 color: $colordestaque;
+                 margin-right: 5px;
+                 font-size: 1.7rem;
+             }
+         }
+
+     }
+ }
+
+ /**----------------- BOTONES ( grupo de 2 ) -----------------**/
+
+ #botonesseguros {
+     width: 100%;
+     padding-left: 10%;
+     padding-right: 10%;
+     padding-top: 2%;
+     padding-bottom: 2%;
+     display: flex;
+     justify-content: flex-end;
+     gap: 5%;
+
+     button {
+         border: none;
+     }
+
+     .botoncoti {
+         @include botones;
+         background-color: $colordestaque;
+
+         &:hover {
+             box-shadow: 0 20px 20px rgba(9, 8, 8, 0.2);
+             transform: translate(0px, -10px);
+             transition: all 0.2s;
+         }
+
+         h1 {
+             color: #ffffff;
+         }
+
+     }
+
+     .botonvolver {
+         @include botones;
+
+         &:hover {
+             box-shadow: 0 20px 20px rgba(9, 8, 8, 0.2);
+             transform: translate(0px, -10px);
+             transition: all 0.2s;
+         }
+
+         h1 {
+             color: $colorprincipal;
+         }
+     }
+ }
+
+ /**----------------- BOTONES FORM -----------------**/
+ #botonessegurosform {
+     width: 90%;
+     padding-top: 2%;
+     display: flex;
+     justify-content: flex-start;
+     gap: 3%;
+
+     button {
+         border: none;
+         border-radius: 0.25rem;
+     }
+
+     .botoncoti {
+         padding: 20px 20px 15px 20px;
+         background-color: $colordestaque;
+
+         h1 {
+             color: #ffffff;
+         }
+     }
+
+     .botonvolver {
+         padding: 20px 20px 15px 20px;
+         background-color: #EDEDEE;
+
+         .botonvolver h1 {
+             color: $colorprincipal;
+         }
+     }
+
+ }
+
+
+
+
+
+ /**--- mediaquery Tablets ----------**/
+ @media (max-width:768px) {
+
+     .planes {
+         padding-left: 4%;
+         padding-right: 4%;
+         flex-direction: column;
+
+         .plan {
+             width: 100%;
+
+             .iconoplan {
+                 padding: 5%;
+
+                 i {
+                     font-size: 6rem;
+                 }
+             }
+         }
+     }
+
+ }
+
+ /**--- Mediaquery Mobile 425 ----------**/
+ @media (max-width:425px) {
+
+     #botonesseguros {
+         padding-left: 4%;
+         padding-right: 4%;
+         flex-direction: column;
+
+         .botoncoti {
+             margin-bottom: 3%;
+         }
+
+         h1 {
+             font-size: 1.3rem;
+         }
+     }
+ }
+
+ /**--- Mediaquery Mobile 320 ----------**/
+ @media (max-width:320px) {}

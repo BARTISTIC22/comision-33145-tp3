@@ -1,0 +1,156 @@
+/**--------------------------------------STYLES HEADER -------------------------------------------------------**/
+
+header {
+    grid-area: header;
+    background-color: #EDEDEE;
+    border-bottom: $colorprincipal 2px solid;
+    padding-left: $margenbox;
+    padding-right: $margenbox;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+
+    .logo {
+        width: 19%;
+    }
+
+    nav {
+        .ulheader {
+            display: flex;
+            font-family: $font;
+            font-weight: 700;
+            font-size: 1.5rem;
+            flex-wrap: wrap;
+            color: $colorprincipal;
+            justify-content: space-around;
+            list-style: none;
+
+
+            li {
+                padding: 25px 15px;
+
+                .botoncomun:hover {
+                    color: $colordestaque;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+
+            }
+
+            .botoncotizar {
+                display: block;
+                color: #EDEDEE;
+                padding-left: 25px;
+                padding-right: 25px;
+                background-color: $colordestaque;
+
+                a {
+                    color: #EDEDEE;
+                    text-decoration: none;
+                }
+
+            }
+        }
+
+    }
+}
+
+/**--- mediaquery Tablets ----------**/
+@media (max-width:768px) {
+
+    /**---header--**/
+    header {
+        padding-top: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
+
+        header .logo {
+            width: 30%;
+        }
+
+        nav {
+            width: 100%;
+
+            .ulheader {
+                margin-top: 25px;
+
+                li {
+                    justify-content: space-around;
+                    margin-left: 2px;
+                    margin-right: 2px;
+                }
+            }
+        }
+    }
+}
+
+/**--- Mediaquery Mobile 425 ----------**/
+
+@media (max-width:425px) {
+
+    /**---header--**/
+    header {
+        padding-bottom: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
+
+        .logo {
+            width: 50%;
+        }
+
+        nav .ulheader {
+            flex-direction: column;
+
+            li {
+                padding: 10px;
+                margin: 0%;
+                margin-bottom: 1%;
+            }
+
+            .botoncomun {
+                background-color: #0455A5;
+
+                a {
+                    color: #EDEDEE;
+
+                    a:hover {
+                        color: #F88C7E;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:425px) and (max-width:768px) {
+    header {
+        .logo {
+            width: 50%;
+        }
+
+        nav {
+            .ulheader {
+                li {
+                    padding: 15px 5px;
+                }
+
+                .botoncotizar {
+                    display: block;
+                    color: #EDEDEE;
+                    padding-left: 15px;
+                    padding-right: 20px;
+                    background-color: $colordestaque;
+                }
+            }
+        }
+    }
+}
+
+    /**-------------------------------------- FIN STYLES HEADER -------------------------------------------------------**/

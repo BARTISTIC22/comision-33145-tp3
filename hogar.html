@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!---------GOOGLE FONTS---------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+  <!---------ICONO---------------->
+  <link href="../sitiogrid/asset/img/flavicon.svg" rel="shortcut icon">
+
+  <!---------METAS---------------->
+  <meta name="description"
+    content="Distintas alternativas de protección para tu hogar con Lobo Seguros. Pedí ya tu Cotización." />
+  <meta name="keywords"
+    content="Seguro de hogar, Seguro contra incendio, Protección casa, Robo, Nahuel Lobo, Seguros, Pólizas, Productor de Seguros, Buenos Aires, Argentina, Cobertura,  Cotización a medida." />
+
+  <!---------HOJA DE ESTILOS---------------->
+  <link a href="css/style.css" rel="stylesheet">
+
+  <!---------LIBRERIAS---------------->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <!--Titulo de mi pagina-->
+  <title>Seguro Hogar</title>
+
+
+</head>
+
+<body>
+  <!------------------------------ HEADER ---------------------------->
+  <header>
+    <div class="logo">
+      <img src="./asset/img/lobo_logo.svg" alt="Logo">
+    </div>
+
+    <nav>
+      <ul class="ulheader">
+        <li class="botoncomun animate__animated animate__bounceIn"><a href="index.html"> ¡QUIÉN SOY!</a></li>
+        <li class="botoncomun animate__animated animate__bounceIn"><a href="seguros.html">SEGUROS</a></li>
+        <li class="botoncomun animate__animated animate__bounceIn"><a href="#">F&A</a></li>
+        <li class="botoncotizar"><a href="cotizar.html">¡QUIERO COTIZAR!</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!---------------------- MAIN: pagina SEGURO HOGAR  ---------------------->
+  <main id="mainhogar">
+    <div id="slidehogar"> </div>
+
+    <section id="hogar">
+
+      <div class="imgizqhogar  animate__animated animate__slideInLeft "></div>
+
+      <div class="texto">
+        <h1 class="animate__animated animate__zoomIn"> SEGURO HOGAR</h1>
+        <p class="animate__animated animate__slideInRight">Sabemos lo importante que es tu casa para vos, por eso contas
+          con distintas alternativas de protección con múltiples beneficios.</p>
+        <p class="animate__animated animate__slideInRight"><u>A continuación enlistamos las diferentes instancias de
+            cobetura para este tipo de seguro:</u></p>
+      </div>
+
+
+
+      <div class="desplegable">
+
+        <button class="accordion">Incendio Edificio</button>
+        <div class="panel">
+          <p>Cubrimos los daños a tu vivienda causados por el fuego y el humo provocados por un incendio, rayo o
+            explosión.</p>
+        </div>
+
+        <button class="accordion">Incendio Contenido</button>
+        <div class="panel">
+          <p>Cubrimos los daños al mobiliario causados por el fuego y el humo provocados por un incendio, rayo o
+            explosión</p>
+        </div>
+
+        <button class="accordion">Responsabilidad Civil</button>
+        <div class="panel">
+          <p>Te protegemos a vos y a tu familia frente a reclamos de terceros.</p>
+        </div>
+
+        <button class="accordion">Robo y/o hurto Contenido</button>
+        <div class="panel">
+          <p>Cubrimos la perdida de los bienes contenidos en la vivienda, como consecuencia de un robo o hurto.</p>
+        </div>
+
+        <button class="accordion">HVCT (Huracán, Vendaval, Ciclón, Tornado)</button>
+        <div class="panel">
+          <p>Amparamos los daños y pérdidas que pudiera sufrir tu vivienda como consecuencia de huracán, vendaval,
+            ciclón y tornado.</p>
+        </div>
+
+        <button class="accordion">Granizo</button>
+        <div class="panel">
+          <p>Te cubrimos los daños y pérdidas que pudiera sufrir la vivienda como consecuencia del granizo.</p>
+        </div>
+
+        <button class="accordion">Cristales</button>
+        <div class="panel">
+          <p>Los cristales de tu casa, ventanas, puertas, ¡incluso espejos! están cubiertos por rajaduras o roturas.</p>
+        </div>
+
+        <button class="accordion">Todo Riesgo Electrodomésticos</button>
+        <div class="panel">
+          <p>Cubrimos la pérdida o daño de dichos bienes, dentro del Hogar.</p>
+        </div>
+
+        <button class="accordion">Equipos portátiles</button>
+        <div class="panel">
+          <p>Cámaras, notebooks y tablets están cubiertos contra pérdida, daño o robo en todo el mundo.</p>
+        </div>
+
+        <button class="accordion">Alimentos en freezer</button>
+        <div class="panel">
+          <p>Cubrimos la pérdida de alimentos depositados en el freezer que se hayan deteriorado a consecuencia de falta
+            de suministro de energía eléctrica por más de 12 (doce) horas consecutivas, a causa de fallas del ente
+            proveedor de energía eléctrica.</p>
+        </div>
+
+      </div>
+
+      <script> var acc = document.getElementsByClassName("accordion"); var i;
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active"); var panel = this.nextElementSibling;
+            if (panel.style.display === "block") { panel.style.display = "none"; }
+            else { panel.style.display = "block"; }
+          });
+        } </script>
+
+    </section>
+
+    <div id="botonesseguros">
+      <button class="botoncoti"> <a href="cotizar.html"><h1>¡QUIERO COTIZAR!</h1></a></button>
+      <button class="botonvolver"> <a href="seguros.html"> <h1>¡VOLVER A SEGUROS!</h1></a> </button>
+    </div>
+
+  </main>
+
+  <!------------------------------ FOOTER ---------------------------->
+  <footer>
+    <ul class="pie">
+      <li class="borde_pie ">
+        <h2>CONTACTO</h2>
+        <p> info@loboseguros.com.ar</p>
+      </li>
+      <li class="borde_pie ">
+        <h2>REDES</h2>
+        <div class="redes"><i class='bx bxl-instagram'></i> <i class='bx bxl-linkedin'></i></div>
+      </li>
+      <li class="borde_pie">
+        <h2>N de Inscripción SSN</h2>
+        <p> 0000 | 0000 | argentinagob.com.ar/ssn</p>
+      </li>
+      <li class="borde_pie ssn"><img src="./asset/img/ssn_logo.png"></li>
+    </ul>
+  </footer>
+
+  <!--Whatsapp flotante-->
+  <a href="https://api.whatsapp.com/send?phone=5491135201010&text=Hola%21%20Quisiera%20hacer%20una%20consulta"
+    class="what" target="_blank">
+    <i class="bx bxl-whatsapp"></i>
+  </a>
+
+</body>
+
+</html>

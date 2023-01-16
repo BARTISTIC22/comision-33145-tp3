@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!---------GOOGLE FONTS---------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+  <!---------ICONO---------------->
+  <link href="../sitiogrid/asset/img/flavicon.svg" rel="shortcut icon">
+
+  <!---------METAS---------------->
+  <meta name="description"
+    content="Somos Lobo Seguros, una empresa con mas de 5 años en el mercado de seguros y en constante crecimiento. Pensamos en tu futuro. Pedí ya tu Cotización." />
+  <meta name="keywords"
+    content="Seguros para mi futuro, Seguro de retiro, Jubiilaciones, Póliza de seguro, Productor de Seguros, Buenos Aires, argentina, Cobertura, Cotización a medida." />
+
+  <!---------HOJA DE ESTILOS---------------->
+  <link a href="css/style.css" rel="stylesheet">
+
+  <!---------LIBRERIAS---------------->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <!--Titulo de mi pagina-->
+  <title>Seguro de Retiro</title>
+
+
+</head>
+
+<body>
+  <!------------------------------ HEADER ---------------------------->
+  <header>
+    <div class="logo">
+      <img src="./asset/img/lobo_logo.svg" alt="Logo">
+    </div>
+
+    <nav>
+      <ul class="ulheader">
+        <li class="botoncomun animate__animated animate__bounceIn"><a href="index.html"> ¡QUIÉN SOY!</a></li>
+        <li class="botoncomun animate__animated animate__bounceIn"><a href="seguros.html">SEGUROS</a></li>
+        <li class="botoncomun animate__animated animate__bounceIn"><a href="#">F&A</a></li>
+        <li class="botoncotizar"><a href="cotizar.html">¡QUIERO COTIZAR!</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!---------------------- MAIN: pagina SEGURO HOGAR  ---------------------->
+  <main id="mainretiro">
+    <div id="slideretiro"> </div>
+
+    <section id="retiro">
+
+      <div class="imgizqretiro  animate__animated animate__slideInLeft "></div>
+
+      <div class="texto">
+        <h1 class="animate__animated animate__zoomIn"> SEGURO HOGAR</h1>
+        <p class="animate__animated animate__slideInRight">Sabemos lo importante que es tu casa para vos, por eso contas
+          con distintas alternativas de protección con múltiples beneficios.</p>
+        <p class="animate__animated animate__slideInRight"><u>A continuación enlistamos las diferentes instancias de
+            cobetura para este tipo de seguro:</u></p>
+      </div>
+
+      <div class="desplegable">
+
+        <button class="accordion">¿Qué es un seguro de Retiro?</button>
+        <div class="panel">
+          <p>Los Seguros de Retiro privado en Argentina son una solución práctica de ahorro que puede hacerse en pesos o en dólares y que se adapta a la capacidad propia de hacerlo. Generar un fondo de retiro les posibilita obtener rendimientos financieros sin tener que ocuparse de cómo generarlos, contribuyendo así a su previsibilidad financiera y a un futuro mejor.</p>
+        </div>
+
+        <button class="accordion">¿Cómo funcionan los seguros de retiro?</button>
+        <div class="panel">
+          <p>Los seguros o fondos de retiro en Argentina funcionan mediante el aporte de una cuota periódica a la cual se le puede adicionar aportes extraordinarios y de cualquier monto, en el momento que se desee. A mayor aporte, mayor será el fondo que acumulará, y, por ende, accederá al finalizar la vida de la póliza. Al llegar a la edad de retiro tendrá la opción de elegir la forma en la que se hará de su fondo, esta podrá ser a través de una renta periódica o mediante un solo pago del total acumulado.</p>
+        </div>
+
+      </div>
+
+      <script> var acc = document.getElementsByClassName("accordion"); var i;
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active"); var panel = this.nextElementSibling;
+            if (panel.style.display === "block") { panel.style.display = "none"; }
+            else { panel.style.display = "block"; }
+          });
+        } </script>
+
+    </section>
+
+    <div id="botonesseguros">
+      <button class="botoncoti"> <a href="cotizar.html"><h1>¡QUIERO COTIZAR!</h1></a></button>
+      <button class="botonvolver"> <a href="seguros.html"> <h1>¡VOLVER A SEGUROS!</h1></a> </button>
+    </div>
+
+  </main>
+
+  <!------------------------------ FOOTER ---------------------------->
+  <footer>
+    <ul class="pie">
+      <li class="borde_pie ">
+        <h2>CONTACTO</h2>
+        <p> info@loboseguros.com.ar</p>
+      </li>
+      <li class="borde_pie ">
+        <h2>REDES</h2>
+        <div class="redes"><i class='bx bxl-instagram'></i> <i class='bx bxl-linkedin'></i></div>
+      </li>
+      <li class="borde_pie">
+        <h2>N de Inscripción SSN</h2>
+        <p> 0000 | 0000 | argentinagob.com.ar/ssn</p>
+      </li>
+      <li class="borde_pie ssn"><img src="./asset/img/ssn_logo.png"></li>
+    </ul>
+  </footer>
+
+  <!--Whatsapp flotante-->
+  <a href="https://api.whatsapp.com/send?phone=5491135201010&text=Hola%21%20Quisiera%20hacer%20una%20consulta"
+    class="what" target="_blank">
+    <i class="bx bxl-whatsapp"></i>
+  </a>
+
+</body>
+
+</html>
