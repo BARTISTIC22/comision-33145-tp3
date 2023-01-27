@@ -122,12 +122,9 @@ header {
 
 
 
-
-
-
             .botoncomun {
-                background-color: #0455A5;
-                padding: 10px 15px;
+                background-color: $colorsecundario;
+                padding: 5px 15px;
                 h1 {color: #EDEDEE;
                     margin-bottom: 1%;}
 
@@ -135,7 +132,7 @@ header {
                     color: #EDEDEE;
 
                     a:hover {
-                        color: #F88C7E;
+                        color: $colordestaque;
                     }
                 }
             }
