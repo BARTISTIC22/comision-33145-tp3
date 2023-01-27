@@ -17,7 +17,7 @@
     bottom: 4px;
     right: 25px;
     font-size: 4rem;
-    z-index: 50;
+    z-index: 100;
 a {color: #79c000;
 &:hover {color:$colordestaque;}}
 
@@ -68,4 +68,5 @@ body {
         "header"
         "main "
         "footer ";
+        overflow-x: hidden;
 }
