@@ -799,7 +799,7 @@ header {
     height: 30vh;
     background-image: url(../asset/img/sliders_comercio.jpg);
     background-size: cover;
-    background-position: top left;
+    background-position: top;
     border-bottom: #F88C7E 5px solid; }
   #maincomercio #comercio {
     width: 100%;
@@ -851,7 +851,7 @@ header {
 @media (max-width: 425px) {
   #maincomercio #slidemcomercio {
     height: 33vh;
-    background-position: center center; } }
+    background-position: top; } }
 
 /**-------------------------------------- STYLES PAGINA RETIRO.HTML -------------------------------------------------------**/
 #mainretiro {
