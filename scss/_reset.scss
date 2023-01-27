@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 /**---ESTILOS GENERALES & MIXIN---**/
@@ -10,16 +11,24 @@
     padding: 15px 25px 8px 25px;
     border-radius: 0.25rem;
     border: none;
-    font-size: 1.6rem;}
+    font-size: 1.6rem;
+}
 
 @mixin whatsapp {
     position: fixed;
-    bottom: 4px;
-    right: 25px;
+    bottom: 1px;
+    right: 10px;
     font-size: 4rem;
     z-index: 100;
-a {color: #79c000;
-&:hover {color:$colordestaque;}}
+    overflow-x: hidden;
+
+    a {
+        color: #79c000;
+
+        &:hover {
+            color: $colordestaque;
+        }
+    }
 
 }
 
@@ -29,18 +38,21 @@ h1 {
     font-family: $font;
     font-weight: 700;
     font-size: 1.6rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: $colorprincipal;
 }
+
 h2 {
     font-family: $font;
     font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 5px;
 }
+
 a {
     text-decoration: none;
 }
+
 a:hover {
     color: $colordestaque;
 }
@@ -52,6 +64,7 @@ a:visited a:link {
 ul {
     list-style-type: none
 }
+
 p {
     font-family: $font;
     margin-bottom: 10px;
@@ -68,5 +81,5 @@ body {
         "header"
         "main "
         "footer ";
-        overflow-x: hidden;
+    overflow-x: auto;
 }

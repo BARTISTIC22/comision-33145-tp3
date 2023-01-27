@@ -9,7 +9,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.6rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #14015B; }
 
 h2 {
@@ -41,7 +41,8 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "header" "main " "footer "; }
+  grid-template-areas: "header" "main " "footer ";
+  overflow-x: auto; }
 
 /**----------------- ELEMENTOS  INDEPEDIENTES -----------------**/
 /**----------------- PLANES ( modulos de 3 ) -----------------**/
@@ -197,6 +198,20 @@ body {
     #botonesseguros h1 {
       font-size: 1.3rem; } }
 
+/**--- Mediaquery Mobile 426 a 531 ----------**/
+@media (min-width: 426px) and (max-width: 531px) {
+  #botonesseguros {
+    padding-left: 4%;
+    padding-right: 4%;
+    flex-direction: column; }
+  #botonesseguros .botoncoti {
+    margin-bottom: 3%;
+    width: 100%; }
+  #botonesseguros .botonvolver {
+    width: 100%; }
+  #botonesseguros h1 {
+    font-size: 1.3rem; } }
+
 /**--------------------------------------STYLES HEADER -------------------------------------------------------**/
 header {
   grid-area: header;
@@ -223,7 +238,7 @@ header {
     justify-content: space-around;
     list-style: none; }
     header nav .ulheader .botoncomun {
-      padding: 25px 15px;
+      padding: 30px 15px;
       color: #14015B; }
       header nav .ulheader .botoncomun:hover {
         box-shadow: 0 20px 20px rgba(9, 8, 8, 0.2); }
@@ -280,9 +295,11 @@ header {
         margin: 0%;
         margin-bottom: 1%; }
       header nav .ulheader .botoncomun {
-        background-color: #0455A5; }
+        background-color: #0455A5;
+        padding: 10px 15px; }
         header nav .ulheader .botoncomun h1 {
-          color: #EDEDEE; }
+          color: #EDEDEE;
+          margin-bottom: 1%; }
         header nav .ulheader .botoncomun a {
           color: #EDEDEE; }
           header nav .ulheader .botoncomun a a:hover {
@@ -1135,10 +1152,11 @@ footer {
 
 .what {
   position: fixed;
-  bottom: 4px;
-  right: 25px;
+  bottom: 1px;
+  right: 10px;
   font-size: 4rem;
-  z-index: 50; }
+  z-index: 100;
+  overflow-x: hidden; }
   .what a {
     color: #79c000; }
     .what a:hover {

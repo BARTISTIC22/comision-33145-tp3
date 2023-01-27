@@ -30,7 +30,7 @@ header {
             list-style: none;
 
             .botoncomun {
-                padding: 25px 15px;
+                padding: 30px 15px;
                 color: $colorprincipal;
                     
                 &:hover { box-shadow: 0 20px 20px rgba(9, 8, 8, 0.2);
@@ -127,7 +127,9 @@ header {
 
             .botoncomun {
                 background-color: #0455A5;
-                h1 {color: #EDEDEE;}
+                padding: 10px 15px;
+                h1 {color: #EDEDEE;
+                    margin-bottom: 1%;}
 
                 a {
                     color: #EDEDEE;
