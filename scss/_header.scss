@@ -15,37 +15,43 @@ header {
 
     .logo {
         width: 19%;
+        &:hover { box-shadow: 0 20px 20px rgba(9, 8, 8, 0.2);}
     }
 
     nav {
+
         .ulheader {
             display: flex;
             font-family: $font;
             font-weight: 700;
             font-size: 1.5rem;
             flex-wrap: wrap;
-            color: $colorprincipal;
             justify-content: space-around;
             list-style: none;
 
-
-            li {
+            .botoncomun {
                 padding: 25px 15px;
-
-                .botoncomun:hover {
-                    color: $colordestaque;
+                color: $colorprincipal;
+                    
+                &:hover { box-shadow: 0 20px 20px rgba(9, 8, 8, 0.2);
                 }
 
-                a {
-                    text-decoration: none;
-                }
+                h1 { color: $colorprincipal;
+}
 
+                a { text-decoration: none;
+                    color: $colorprincipal;
+                    &:hover {color:$colordestaque;}
+                    }
+                }
 
             }
 
             .botoncotizar {
                 display: block;
                 color: #EDEDEE;
+                padding-top: 30px;
+                padding-bottom: 25px;
                 padding-left: 25px;
                 padding-right: 25px;
                 background-color: $colordestaque;
@@ -58,8 +64,8 @@ header {
             }
         }
 
-    }
-}
+    } 
+
 
 /**--- mediaquery Tablets ----------**/
 @media (max-width:768px) {
@@ -90,9 +96,9 @@ header {
     }
 }
 
-/**--- Mediaquery Mobile 425 ----------**/
+/**--- Mediaquery Mobile max 620 ----------**/
 
-@media (max-width:425px) {
+@media (max-width:620px) {
 
     /**---header--**/
     header {
@@ -102,6 +108,7 @@ header {
 
         .logo {
             width: 50%;
+          
         }
 
         nav .ulheader {
@@ -113,8 +120,14 @@ header {
                 margin-bottom: 1%;
             }
 
+
+
+
+
+
             .botoncomun {
                 background-color: #0455A5;
+                h1 {color: #EDEDEE;}
 
                 a {
                     color: #EDEDEE;
@@ -129,7 +142,7 @@ header {
 }
 
 
-@media (min-width:425px) and (max-width:768px) {
+@media (min-width:621px) and (max-width:768px) {
     header {
         .logo {
             width: 50%;
@@ -153,4 +166,4 @@ header {
     }
 }
 
-    /**-------------------------------------- FIN STYLES HEADER -------------------------------------------------------**/
+/**-------------------------------------- FIN STYLES HEADER -------------------------------------------------------**/

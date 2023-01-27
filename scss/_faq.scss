@@ -1,0 +1,68 @@
+
+/**-------------------------------------- STYLES PAGINA MOTO.HTML -------------------------------------------------------**/
+
+#mainfaq {
+    grid-area: main;
+    background-color: $fondoprincipal;
+
+    #faq {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .texto {
+            
+            width:100%;
+            padding-top: 1%;
+
+            h1 {text-align: center;
+                color: $colorsecundario;
+                padding-bottom: 2%;
+                padding-top: 2%;
+            }
+
+            p {
+                color: $colorprincipal;
+                font-size: 1.3rem;
+                font-size: 100;
+                margin-bottom: 1%;
+                padding: 2%;
+            }
+        }
+
+    }
+}
+
+/**----------------- PLANES en _Partial.scss -----------------**/
+/**-----------------BOTONES en _Partial.scss -----------------**/
+
+
+/**--- Mediaquery Tablets  768 ----------**/
+@media (max-width:768px) {
+
+    #mainfaq {
+
+        #faq {
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            flex-direction: column;
+
+            .texto {
+                width: 90%;
+                font-size: 1.6rem;
+            }
+        }
+    }}
+
+
+/**-------------------------------------- FIN STYLES PAGINA MOTO.HTML -------------------------------------------------------**/

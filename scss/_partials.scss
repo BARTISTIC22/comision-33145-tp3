@@ -17,6 +17,10 @@
          background: $colordestaque;
          background: linear-gradient(180deg, rgba(248, 140, 126, 0.177) 0%, rgba(246, 246, 246, 0) 100%);
 
+         &:hover { box-shadow: 0 20px 20px rgba(9, 8, 8, 0.2);
+        padding-top: 5%;
+        border-top: $colorprincipal 5px solid;}
+
          .iconoplan {
              padding: 10% 35%;
 
@@ -36,6 +40,7 @@
          .botoncoti {
              @include botones;
              background-color: $colordestaque;
+             
 
              h1 {
                  color: #EDEDEE;
@@ -228,6 +233,3 @@
          }
      }
  }
-
- /**--- Mediaquery Mobile 320 ----------**/
- @media (max-width:320px) {}

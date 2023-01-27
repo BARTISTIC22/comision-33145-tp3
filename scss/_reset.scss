@@ -6,8 +6,6 @@
 }
 
 /**---ESTILOS GENERALES & MIXIN---**/
-
-
 @mixin botones {
     padding: 15px 25px 8px 25px;
     border-radius: 0.25rem;
@@ -16,11 +14,14 @@
 
 @mixin whatsapp {
     position: fixed;
-    bottom: 5px;
-    right: 28px;
-    color: #79c000;
+    bottom: 4px;
+    right: 25px;
     font-size: 4rem;
-    z-index: 50;}
+    z-index: 50;
+a {color: #79c000;
+&:hover {color:$colordestaque;}}
+
+}
 
 
 
@@ -29,6 +30,7 @@ h1 {
     font-weight: 700;
     font-size: 1.6rem;
     margin-bottom: 10px;
+    color: $colorprincipal;
 }
 h2 {
     font-family: $font;

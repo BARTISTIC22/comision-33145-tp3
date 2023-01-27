@@ -36,6 +36,13 @@ footer {
                 color: #fff;
                 font-size: 1rem;
             }
+
+            a {
+                font-family: $font;
+                color: #fff;
+                font-size: 1rem;
+                &:hover {color:$colordestaque;}
+            }
         }
     }
 
@@ -46,14 +53,18 @@ footer {
     i {
         display: flex;
         color: #fff;
-        font-size: 1.5rem;
-        margin-right: 3px;
+        font-size: 1.6rem;
+        margin-right: 4px;
+        &:hover{color: $colordestaque;}
     }
-}
 
-.what {
-    @include whatsapp;
+    
 }
+.what {
+        @include whatsapp;
+    }
+
+
 
 /**--- mediaquery Tablets ----------**/
 @media (max-width:768px) {

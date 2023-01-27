@@ -1,7 +1,7 @@
 {
   "name": "lobositio",
   "version": "1.0.0",
-  "description": "Tercer entrega de Desarrollo Web para curso CoderHouse 2023 .",
+  "description": "Entrega Final del Curso de Desarrollo Web CoderHouse 2023.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

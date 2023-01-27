@@ -1,2 +1,2 @@
-# Sitio Web utilizando Grid y Flex  con HTML y CSS
- Tercer entrega del Curso de Desarrollo Web  -  CoderHouse .
+# "Entrega Final del Curso de Desarrollo Web CoderHouse 2023.
+ Sitio completo desarrollado con Grids, Flex y Sass.

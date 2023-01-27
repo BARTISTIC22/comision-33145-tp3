@@ -26,6 +26,15 @@
             background-size: contain;
             background-position: top center;
             background-repeat: no-repeat;
+            animation: balanceo 2s infinite ease-in-out;
+            transition: all 0.3s ease; 
+            @keyframes balanceo{
+                0% {
+                  transform: rotate(-1.2deg); }
+                50% {
+                  transform: rotate(1.2deg); }
+                100% {
+                  transform: rotate(-1.2deg); } }
 
         }
         .texto {
@@ -91,10 +100,5 @@
     }
 }
 
-/**--- Mediaquery Mobile 320 ----------**/
-@media (max-width:320px) {}
-
-
-/**-------------------------------------- FIN STYLES PAGINA HOGAR.HTML -------------------------------------------------------**/
 
 
