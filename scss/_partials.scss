@@ -233,3 +233,18 @@
          }
      }
  }
+
+     /**--- Mediaquery Mobile 426 a 531 ----------**/
+@media (min-width: 426px)  and (max-width: 531px) {
+    #botonesseguros {
+      padding-left: 4%;
+      padding-right: 4%;
+      flex-direction: column; }
+      #botonesseguros .botoncoti {
+        margin-bottom: 3%;
+      width: 100%; }
+      #botonesseguros .botonvolver {width: 100%; }
+      #botonesseguros h1 {
+        font-size: 1.3rem; }
+      
+      }
